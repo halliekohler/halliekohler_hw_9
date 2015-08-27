@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
 
 	</head>
@@ -19,9 +20,6 @@
 				</ul>
 			</nav>
 		</div>
-
-		</head>
-
 
 		<div id="slider">
 			<img src="./assets/images/img0.jpg" id="image">
@@ -38,14 +36,36 @@
 			<div class="right_hold"><img onClick="photo(1)" class="right" src="./assets/images/arrowright.png"></div>
 		</div>
 
-		<div id="info">
+		<div id="info_wrapper">
 			<h1>Meander Line Design Co.</h1>
-			<p>A greeting card company with an environmental focus, creating re-usable cards that can be passed from person to person.</p>
-			<p>Custom design: logos, websites, t-shirts, and more.</p>
+			<h2>A greeting card company with an environmental focus, creating re-usable cards that can be passed from person to person.</h2>
+			
+			<div class="info">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="info">	
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+
+		<div id="space">
+		</div>
+
+		<div id="footer">
 
 
 		</div>
-
 
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
@@ -59,20 +79,6 @@
 			if(imageCount < 0){imageCount = total;}	
 			image.src = "./assets/images/img"+ imageCount +".jpg";
 			}
-			
-		// window.setInterval(function photoA() {
-		// 	var image = document.getElementById('image');
-		// 	imageCount = imageCount + 0;
-		// 	if(imageCount > total){imageCount = 0;}
-		// 	if(imageCount < 0){imageCount = total;}	
-		// 	image.src = "./assets/images/img"+ imageCount +".jpg";
-		// 	},5000);
-		
-
-
-
-
-
 
 		</script>
 	</body>
