@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meander Line Designs</title>
+		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+		<div id="header_wrapper">
+			<nav id="top">
+				<ul>
+					<li> <a href="cards.html" target="blank">Cards</a></li>
+					<li> <a href="design.html" target="blank">Design</a></li>
+					<li> <a href="wholesale.html" target="blank">Wholesale</a></li>
+					<li> <a href="contact.html" target="blank">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		</head>
+
+
+		<div id="slider">
+			<img src="./assets/images/img0.jpg" id="image">
+			<img src="./assets/images/img1.jpg" id="image">
+			<img src="./assets/images/img2.jpg" id="image">
+			<img src="./assets/images/img3.jpg" id="image">
+			<img src="./assets/images/img4.jpg" id="image">
+			<img src="./assets/images/img5.jpg" id="image">
+			<img src="./assets/images/img6.jpg" id="image">
+			<img src="./assets/images/img7.jpg" id="image">
+			<img src="./assets/images/img8.jpg" id="image">
+			<img src="./assets/images/img9.jpg" id="image">
+			<div class="left_hold"><img onClick="photo(-1)" class="left" src="./assets/images/arrowleft.png"></div>
+			<div class="right_hold"><img onClick="photo(1)" class="right" src="./assets/images/arrowright.png"></div>
+		</div>
+
+		<div id="info">
+			<h1>Meander Line Design Co.</h1>
+			<p>A greeting card company with an environmental focus, creating re-usable cards that can be passed from person to person.</p>
+			<p>Custom design: logos, websites, t-shirts, and more.</p>
+
+
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		var imageCount = 0;
+		var total = 9;
+
+		function photo(i) {
+			var image = document.getElementById('image');
+			imageCount = imageCount + i;
+			if(imageCount > total){imageCount = 0;}
+			if(imageCount < 0){imageCount = total;}	
+			image.src = "./assets/images/img"+ imageCount +".jpg";
+			}
+			
+		// window.setInterval(function photoA() {
+		// 	var image = document.getElementById('image');
+		// 	imageCount = imageCount + 0;
+		// 	if(imageCount > total){imageCount = 0;}
+		// 	if(imageCount < 0){imageCount = total;}	
+		// 	image.src = "./assets/images/img"+ imageCount +".jpg";
+		// 	},5000);
+		
+
+
+
+
+
+
+		</script>
+	</body>
+</html>
+
+
+
+

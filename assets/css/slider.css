@@ -1,0 +1,41 @@
+/**{
+	margin:0px;
+	}*/
+#slider {
+	height:500px;
+	width:750px;
+	margin: 110px auto;
+	margin-bottom: 0;
+	overflow:hidden;
+	}
+#image {
+	height:500px;
+	width:750px;
+	border-radius:10px;
+	}
+
+.left {
+	height:119px;
+	width:75.5px;
+	position:absolute;
+	top: 45%;
+    left: 80px;
+    opacity: 5;
+	transition: all .5s ease-in-out 0s;
+	}
+.right {
+	height:119px;
+	width:76px;
+	position:absolute;
+	top: 45%;
+    right: 80px;
+    opacity: 5;
+	transition: all .5s ease-in-out 0s;
+	}
+.left_hold:hover .left {
+	opacity:0.6;
+	}
+.right_hold:hover .right {
+	opacity:0.6;
+}
+.left:hover .left1
