@@ -2,21 +2,22 @@
 <html>
 	<head>
 		<title>Meander Line Designs</title>
-		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
-		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>	
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/slider.css">	
+
 
 	</head>
 	<body>
 		<div id="header_wrapper">
 			<nav id="top">
 				<ul>
-					<li> <a href="cards.html" target="blank">Cards</a></li>
-					<li> <a href="design.html" target="blank">Design</a></li>
-					<li> <a href="wholesale.html" target="blank">Wholesale</a></li>
-					<li> <a href="contact.html" target="blank">Contact</a></li>
+					<li> <a href="contact.html">Contact</a></li>
+					<li> <a href="wholesale.html">Wholesale</a></li>
+					<li> <a href="design.html">Design</a></li>
+					<li> <a href="http://mothmullein.com" target="blank">Cards</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -69,15 +70,15 @@
 
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
-		var imageCount = 0;
-		var total = 9;
+			var imageCount = 0;
+			var total = 9;
 
-		function photo(i) {
-			var image = document.getElementById('image');
-			imageCount = imageCount + i;
-			if(imageCount > total){imageCount = 0;}
-			if(imageCount < 0){imageCount = total;}	
-			image.src = "./assets/images/img"+ imageCount +".jpg";
+			function photo(i) {
+				var image = document.getElementById('image');
+				imageCount = imageCount + i;
+				if(imageCount > total){imageCount = 0;}
+				if(imageCount < 0){imageCount = total;}	
+				image.src = "./assets/images/img"+ imageCount +".jpg";
 			}
 
 		</script>
