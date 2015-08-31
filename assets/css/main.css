@@ -23,10 +23,10 @@ body {
 
 #header_wrapper li{
 	list-style-type: none;
-	font-family: georgia;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200; 
 	letter-spacing: 2px;
 	font-size: 20px;
-	font-weight: bold;
 	float: right;
 	display: inline;
 	padding: 44px 20px;
@@ -63,13 +63,19 @@ body {
 }
 
 #info_wrapper h2 {
-	font-family: georgia;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200; 
 	font-size:20px;
 	line-height: 23px;
 	padding: 10px;
 }
 
-.info p {
+.social_icons{
+	padding: 50px 20px;
+}
+
+
+/*.info p {
 	font-family: georgia;
 	font-size:15px;
 	line-height: 23px;
@@ -82,7 +88,7 @@ body {
 	float:left;
 	margin: 0 auto;
 	display: inline-block;
-}
+}*/
 
 #space{
 	width: 100%;
