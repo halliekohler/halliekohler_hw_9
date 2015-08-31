@@ -32,22 +32,22 @@
 
 		.background{
 			background-color: white;
-			height:2100px;
-			width:800px;
+			height: 2100px;
+			width: 800px;
 			margin: 200px auto;
 			border-radius: 10px;
 		}
 
-		.thumbnail {
+		.thumbnail{
 	        display: inline-block;
-	        float:left;
+	        float: left;
 	        width: 340px;
 	        margin: 0 auto;
 	        padding: 30px;
 	        cursor: pointer;
       	}
 
-      	.lightbox {
+      	.lightbox{
 	        display: none;
 	        position: fixed;
 	        top: 0;
@@ -57,30 +57,28 @@
 	        z-index: 21;
       	}
 
-      	.lightbox img {
+      	.lightbox img{
 	       	position: absolute;
-	       	left:400px;
-	       	top:50px;
+	       	left: 400px;
+	       	top: 50px;
 	        width: 600px;
 
       	}
 
-      	.fa-times-circle-o {
+      	.fa-times-circle-o{
 	        position: absolute;
 	        top: 50px;
 	        right: 50px;
 
       	}
 
-      	.overlay {
+      	.overlay{
 	        position: absolute;
 	        width: 100%;
 	        height: 100%;
 	        top: 0;
 	        left: 0;
 			background-color: rgba(255,255,255,0.8);
-       	}
-
        	}
 	</style>
 </head>
@@ -149,10 +147,7 @@
           $("body").css("overflow", "");
           $(".lightbox .enlarged-image").attr("src", "");
           $(".lightbox").hide();
-        });
-
-
-       
+        });       
     });
 
 	</script>

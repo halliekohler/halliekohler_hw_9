@@ -22,7 +22,6 @@
 			font-family:'Fredericka the Great', serif;
 			text-align: center;
 			color: white;
-
 		}
 
 		.title h1{
@@ -32,22 +31,22 @@
 
 		.background{
 			background-color: rgba(156,155,122,0.6);
-			height:2460px;
-			width:800px;
+			height: 2460px;
+			width: 800px;
 			margin: 200px auto;
 			border-radius: 10px;
 		}
 
-		.thumbnail {
+		.thumbnail{
 	        display: inline-block;
-	        float:left;
+	        float: left;
 	        width: 340px;
 	        margin: 0 auto;
 	        padding: 30px;
 	        cursor: pointer;
       	}
 
-      	.lightbox {
+      	.lightbox{
 	        display: none;
 	        position: fixed;
 	        top: 0;
@@ -57,7 +56,7 @@
 	        z-index: 21;
       	}
 
-      	.lightbox img {
+      	.lightbox img{
 	       	position: absolute;
 	       	top: 200px;
 	       	left:400px;
@@ -65,32 +64,20 @@
 	        border-radius: 20px;
       	}
 
-      	.fa-times-circle-o {
+      	.fa-times-circle-o{
 	        position: absolute;
 	        top: 180px;
 	        right: 300px;
 
       	}
 
-      	.overlay {
+      	.overlay{
 	        position: absolute;
 	        width: 100%;
 	        height: 100%;
 	        top: 0;
 	        left: 0;
 			background-color: rgba(156,155,122,0.8);
-       	}
-
-       	.thumb_text{
-       		display: none;
-       		width: 340px;
-       		height:227px;
-       		background-color: (156,155,122,0.8);
-	        margin: 0 auto;
-	        padding: 30px;
-	        font-family: 'Fredericka the Great', serif;
-	        color:#1e322f;
-
        	}
 	</style>
 </head>
@@ -118,37 +105,21 @@
 		</div> 	
 		
 		<img class="thumbnail" src="./assets/images/cards/cards1.jpg">
-		<div class="thumb_text" div="one">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards2.jpg">
-	    <div class="thumb_text" div="two">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards3.jpg">
-	    <div class="thumb_text" div="three">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards4.jpg">
-		<div class="thumb_text" div="four">this project</div>
 		<img class="thumbnail" src="./assets/images/cards/cards5.jpg">
-		<div class="thumb_text" div="five">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards6.jpg">
-	    <div class="thumb_text" div="six">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards7.jpg">
-	    <div class="thumb_text" div="seven">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards8.jpg">
-		<div class="thumb_text" div="eight">this project</div>
 		<img class="thumbnail" src="./assets/images/cards/cards9.jpg">
-		<div class="thumb_text" div="nine">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards10.jpg">
-	    <div class="thumb_text" div="ten">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards11.jpg">
-	    <div class="thumb_text" div="eleven">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards12.jpg">
-		<div class="thumb_text" div="twelve">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards13.jpg">
-		<div class="thumb_text" div="thirteen">this project</div>
 		<img class="thumbnail" src="./assets/images/cards/cards14.jpg">
-		<div class="thumb_text" div="fourteen">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards15.jpg">
-	    <div class="thumb_text" div="fifteen">this project</div>
 	    <img class="thumbnail" src="./assets/images/cards/cards16.jpg">
-	    <div class="thumb_text" div="sixteen">this project</div>
 
 	    <div class="lightbox">
 	    	<div class="overlay"></div>
@@ -182,16 +153,7 @@
           $("body").css("overflow", "");
           $(".lightbox .enlarged-image").attr("src", "");
           $(".lightbox").hide();
-        });
-
-
-         // $(".thumbnail").mouseenter(function(){
-         // 	$(".thumb_text").show("this");
-         //  });
-         // $(".thumbnail").mouseleave(function(){
-         // 	$(".thumb_text").hide("this");
-         // });
-       
+        });     
     });
 
 	</script>
