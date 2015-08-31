@@ -16,9 +16,22 @@
 			background-image: url("./assets/images/background.png");
 		}
 
+		.title{
+			padding: 50px 0;
+			font-family:'Fredericka the Great', serif;
+			text-align: center;
+
+		}
+
+		.title h1{
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+
 		.background{
-			background-color: rgba(156,155,122,0.6);
-			height:600px;
+			background-color: white;
+			height:2100px;
 			width:800px;
 			margin: 200px auto;
 			border-radius: 10px;
@@ -45,16 +58,16 @@
 
       	.lightbox img {
 	       	position: absolute;
-	       	top: 200px;
 	       	left:400px;
+	       	top:50px;
 	        width: 600px;
-	        border-radius: 20px;
+
       	}
 
       	.fa-times-circle-o {
 	        position: absolute;
-	        top: 180px;
-	        right: 300px;
+	        top: 50px;
+	        right: 50px;
 
       	}
 
@@ -64,18 +77,8 @@
 	        height: 100%;
 	        top: 0;
 	        left: 0;
-			background-color: rgba(156,155,122,0.8);
+			background-color: rgba(255,255,255,0.8);
        	}
-
-       	.thumb_text{
-       		display: none;
-       		width: 340px;
-       		height:227px;
-       		background-color: (156,155,122,0.8);
-	        margin: 0 auto;
-	        padding: 30px;
-	        font-family: 'Fredericka the Great', serif;
-	        color:#1e322f;
 
        	}
 	</style>
@@ -83,28 +86,35 @@
 
 <body>
 	<div id="header_wrapper">
+		<div id="logo">
+			<a href="index.html"><h1>Meander Line Design Co.</h1></a>
+		</div>
 		<nav id="top">
 			<ul>
-				
 				<li> <a href="contact.html">Contact</a></li>
-				<li> <a href="wholesale.html">Wholesale</a></li>
+				<li> <a href="http://mothmullein.com" target="blank">Shop</a></li>
+				<li> <a href="cards.html">Cards</a></li>
 				<li> <a href="design.html">Design</a></li>
-				<li> <a href="http://mothmullein.com" target="blank">Cards</a></li>
-				
 			</ul>
 		</nav>
 	</div>
 
-
+	
 	<div class="background">  	
-		<img class="thumbnail" src="./assets/images/img1.jpg">
-		<div class="thumb_text 1">this project</div>
-	    <img class="thumbnail" src="./assets/images/img2.jpg">
-	    <div class="thumb_text 2">this project</div>
-	    <img class="thumbnail" src="./assets/images/img3.jpg">
-	    <div class="thumb_text 3">this project</div>
-	    <img class="thumbnail 4" src="./assets/images/img4.jpg">
-		<div class="thumb_text">this project</div>
+		<div class = "title">
+			<h1>Graphic &amp; Hand Drawn Illustration</h1>
+		</div>
+
+		<img class="thumbnail" src="./assets/images/design/design9.png">
+	    <img class="thumbnail" src="./assets/images/design/design2.png">
+	    <img class="thumbnail" src="./assets/images/design/design3.png">
+	    <img class="thumbnail" src="./assets/images/design/design4.png">
+	    <img class="thumbnail" src="./assets/images/design/design6.png">
+	    <img class="thumbnail" src="./assets/images/design/design7.png">
+	    <img class="thumbnail" src="./assets/images/design/design1.png">
+	    <img class="thumbnail" src="./assets/images/design/design8.png">
+	    <img class="thumbnail" src="./assets/images/design/design10.png">
+	    <img class="thumbnail" src="./assets/images/design/design12.png">
 
 	    <div class="lightbox">
 	    	<div class="overlay"></div>
@@ -141,12 +151,6 @@
         });
 
 
-         // $(".thumbnail").mouseenter(function(){
-         // 	$(".thumb_text").show("this");
-         //  });
-         // $(".thumbnail").mouseleave(function(){
-         // 	$(".thumb_text").hide("this");
-         // });
        
     });
 
